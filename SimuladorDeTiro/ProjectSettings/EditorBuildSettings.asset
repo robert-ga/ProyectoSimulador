@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Entrenamiento.unity
+    guid: 0e4a3fa7f34343342b17d37ddc72ef0f
+  - enabled: 1
+    path: Assets/Scenes/Estadisticas.unity
+    guid: 3e75a26ff73bd824b866e4488c77b71f
+  - enabled: 1
+    path: Assets/Scenes/EstadisticasUsuarios.unity
+    guid: 78621788a7cd6094fbf981f3e10aef1a
+  - enabled: 1
+    path: Assets/Scenes/Login.unity
+    guid: b4898e3ef3982fa4c94fa95c4b20a5c2
+  - enabled: 1
+    path: Assets/Scenes/MenuAdministrador.unity
+    guid: 9326aacae841e18409496c982f9d496c
+  - enabled: 1
+    path: Assets/Scenes/MenuEntrenador.unity
+    guid: cbacc5422bc398144a355952ad2c3b8c
+  - enabled: 1
+    path: Assets/Scenes/Modificar.unity
+    guid: 172cb79d7165f7d4ca199d6435781ac6
+  - enabled: 1
+    path: Assets/Scenes/Registro.unity
+    guid: 2d9ac4f73e6db214a91ccc3dc94b2c1c
+  - enabled: 1
+    path: Assets/Scenes/Usuarios.unity
+    guid: 8bcf6ede214bc1a4995c8c037c5aa404
+  - enabled: 1
+    path: Assets/Scenes/Opciones.unity
+    guid: 9b2bfd939f7ebdf4c90a56fea43b1e16
+  - enabled: 1
+    path: Assets/Scenes/Examen.unity
+    guid: 71fea3324ef70534a80ba9bb1308d338
+  m_configObjects: {}

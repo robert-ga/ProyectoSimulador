@@ -1,0 +1,556 @@
+﻿++Solución "SimuladorDeTiro" ‎(1 de 1 proyecto)
+i:{00000000-0000-0000-0000-000000000000}:SimuladorDeTiro.sln
+++Assembly-CSharp
+i:{00000000-0000-0000-0000-000000000000}:Assembly-CSharp
+++Referencias
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++Assets
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\
+++BD
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\bd\
+++ConexionDB.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\bd\conexiondb.cs
+++Scripts
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\scripts\
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\
+++jugador
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\scripts\jugador\
+++CamController.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\scripts\jugador\camcontroller.cs
+++ControlesJugador.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\scripts\jugador\controlesjugador.cs
+++llenardatosusuarios.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\scripts\jugador\llenardatosusuarios.cs
+++recuperar.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\scripts\jugador\recuperar.cs
+++Target.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\scripts\jugador\target.cs
+++TargetBouns.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\scripts\jugador\targetbouns.cs
+++TargetShooter.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\scripts\jugador\targetshooter.cs
+++menus
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\scripts\menus\
+++dalateuser.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\scripts\menus\dalateuser.cs
+++llenarpuntuacionusuarios.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\scripts\menus\llenarpuntuacionusuarios.cs
+++llenarusuariopuntuacion.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\scripts\menus\llenarusuariopuntuacion.cs
+++manuestadisticajugador.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\scripts\menus\manuestadisticajugador.cs
+++menuadministrador.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\scripts\menus\menuadministrador.cs
+++menuentrenador.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\scripts\menus\menuentrenador.cs
+++menuestadisitcajugadores.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\scripts\menus\menuestadisitcajugadores.cs
+++menulogin.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\scripts\menus\menulogin.cs
+++menuopciones.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\scripts\menus\menuopciones.cs
+++menuregistro.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\scripts\menus\menuregistro.cs
+++modificar.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\scripts\menus\modificar.cs
+++usuariosregistrados.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\scripts\menus\usuariosregistrados.cs
+++TextMesh Pro
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\
+++Examples & Extras
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\
+++Fonts
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\fonts\
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\fonts\
+++Resources
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\resources\
+++Sprites
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\sprites\
+++Microsoft.Win32.Primitives
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++Mono.Data.Sqlite
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++mscorlib
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++netstandard
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.AppContext
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Collections
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Collections.Concurrent
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Collections.NonGeneric
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Collections.Specialized
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.ComponentModel
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.ComponentModel.Composition
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.ComponentModel.EventBasedAsync
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.ComponentModel.Primitives
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.ComponentModel.TypeConverter
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Console
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Core
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Data
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Data.Common
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Diagnostics.Contracts
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Diagnostics.Debug
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Diagnostics.FileVersionInfo
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Diagnostics.Process
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Diagnostics.StackTrace
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Diagnostics.TextWriterTraceListener
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Diagnostics.Tools
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Diagnostics.TraceSource
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Diagnostics.Tracing
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Drawing
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Drawing.Primitives
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Dynamic.Runtime
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Globalization
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Globalization.Calendars
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Globalization.Extensions
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.IO
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.IO.Compression
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.IO.Compression.FileSystem
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.IO.Compression.ZipFile
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.IO.FileSystem
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.IO.FileSystem.DriveInfo
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.IO.FileSystem.Primitives
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.IO.FileSystem.Watcher
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.IO.IsolatedStorage
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.IO.MemoryMappedFiles
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.IO.Pipes
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.IO.UnmanagedMemoryStream
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Linq
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Linq.Expressions
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Linq.Parallel
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Linq.Queryable
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Net
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Net.Http
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Net.NameResolution
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Net.NetworkInformation
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Net.Ping
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Net.Primitives
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Net.Requests
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Net.Security
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Net.Sockets
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Net.WebHeaderCollection
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Net.WebSockets
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Net.WebSockets.Client
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Numerics
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Numerics.Vectors
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.ObjectModel
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Reflection
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Reflection.Extensions
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Reflection.Primitives
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Resources.Reader
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Resources.ResourceManager
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Resources.Writer
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Runtime
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Runtime.CompilerServices.VisualC
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Runtime.Extensions
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Runtime.Handles
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Runtime.InteropServices
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Runtime.InteropServices.RuntimeInformation
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Runtime.InteropServices.WindowsRuntime
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Runtime.Numerics
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Runtime.Serialization
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Runtime.Serialization.Formatters
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Runtime.Serialization.Json
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Runtime.Serialization.Primitives
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Runtime.Serialization.Xml
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Security.Claims
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Security.Cryptography.Algorithms
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Security.Cryptography.Csp
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Security.Cryptography.Encoding
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Security.Cryptography.Primitives
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Security.Cryptography.X509Certificates
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Security.Principal
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Security.SecureString
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.ServiceModel.Web
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Text.Encoding
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Text.Encoding.Extensions
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Text.RegularExpressions
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Threading
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Threading.Overlapped
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Threading.Tasks
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Threading.Tasks.Parallel
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Threading.Thread
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Threading.ThreadPool
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Threading.Timer
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Transactions
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.ValueTuple
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Web
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Windows
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Xml
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Xml.Linq
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Xml.ReaderWriter
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Xml.Serialization
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Xml.XDocument
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Xml.XmlDocument
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Xml.XmlSerializer
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Xml.XPath
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++System.Xml.XPath.XDocument
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++Unity.Rider.Editor
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++Unity.TextMeshPro
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++Unity.TextMeshPro.Editor
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++Unity.Timeline
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++Unity.Timeline.Editor
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++Unity.VisualStudio.Editor
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++Unity.VSCode.Editor
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEditor
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEditor.UI
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.AccessibilityModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.AIModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.AndroidJNIModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.AnimationModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.ARModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.AssetBundleModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.AudioModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.ClothModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.ClusterInputModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.ClusterRendererModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.CoreModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.CrashReportingModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.DirectorModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.DSPGraphModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.GameCenterModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.GridModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.HotReloadModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.ImageConversionModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.IMGUIModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.InputLegacyModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.InputModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.JSONSerializeModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.LocalizationModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.ParticleSystemModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.PerformanceReportingModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.Physics2DModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.PhysicsModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.ProfilerModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.ScreenCaptureModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.SharedInternalsModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.SpriteMaskModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.SpriteShapeModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.StreamingModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.SubstanceModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.SubsystemsModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.TerrainModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.TerrainPhysicsModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.TextCoreModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.TextRenderingModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.TilemapModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.TLSModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.UI
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.UIElementsModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.UIElementsNativeModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.UIModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.UmbraModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.UNETModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.UnityAnalyticsModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.UnityConnectModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.UnityTestProtocolModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.UnityWebRequestAssetBundleModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.UnityWebRequestAudioModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.UnityWebRequestModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.UnityWebRequestTextureModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.UnityWebRequestWWWModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.VehiclesModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.VFXModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.VideoModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.VirtualTexturingModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.VRModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.WindModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++UnityEngine.XRModule
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:
+++LiberationSans - OFL.txt
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\fonts\liberationsans - ofl.txt
+++Shaders
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\resources\shaders\
+++LineBreaking Following Characters.txt
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\resources\linebreaking following characters.txt
+++LineBreaking Leading Characters.txt
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\resources\linebreaking leading characters.txt
+++EmojiOne Attribution.txt
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\sprites\emojione attribution.txt
+++Anton OFL.txt
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\fonts\anton ofl.txt
+++Bangers - OFL.txt
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\fonts\bangers - ofl.txt
+++Oswald-Bold - OFL.txt
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\fonts\oswald-bold - ofl.txt
+++Benchmark01.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\benchmark01.cs
+++Benchmark01_UGUI.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\benchmark01_ugui.cs
+++Benchmark02.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\benchmark02.cs
+++Benchmark03.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\benchmark03.cs
+++Benchmark04.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\benchmark04.cs
+++CameraController.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\cameracontroller.cs
+++ChatController.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\chatcontroller.cs
+++DropdownSample.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\dropdownsample.cs
+++EnvMapAnimator.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\envmapanimator.cs
+++ObjectSpin.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\objectspin.cs
+++ShaderPropAnimator.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\shaderpropanimator.cs
+++SimpleScript.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\simplescript.cs
+++SkewTextExample.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\skewtextexample.cs
+++TeleType.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\teletype.cs
+++TextConsoleSimulator.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\textconsolesimulator.cs
+++TextMeshProFloatingText.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\textmeshprofloatingtext.cs
+++TextMeshSpawner.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\textmeshspawner.cs
+++TMP_DigitValidator.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\tmp_digitvalidator.cs
+++TMP_ExampleScript_01.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\tmp_examplescript_01.cs
+++TMP_FrameRateCounter.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\tmp_frameratecounter.cs
+++TMP_PhoneNumberValidator.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\tmp_phonenumbervalidator.cs
+++TMP_TextEventCheck.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\tmp_texteventcheck.cs
+++TMP_TextEventHandler.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\tmp_texteventhandler.cs
+++TMP_TextInfoDebugTool.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\tmp_textinfodebugtool.cs
+++TMP_TextSelector_A.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\tmp_textselector_a.cs
+++TMP_TextSelector_B.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\tmp_textselector_b.cs
+++TMP_UiFrameRateCounter.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\tmp_uiframeratecounter.cs
+++TMPro_InstructionOverlay.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\tmpro_instructionoverlay.cs
+++VertexColorCycler.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\vertexcolorcycler.cs
+++VertexJitter.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\vertexjitter.cs
+++VertexShakeA.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\vertexshakea.cs
+++VertexShakeB.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\vertexshakeb.cs
+++VertexZoom.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\vertexzoom.cs
+++WarpTextExample.cs
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\examples & extras\scripts\warptextexample.cs
+++TMP_Bitmap-Custom-Atlas.shader
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\resources\shaders\tmp_bitmap-custom-atlas.shader
+++TMP_Bitmap-Mobile.shader
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\resources\shaders\tmp_bitmap-mobile.shader
+++TMP_Bitmap.shader
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\resources\shaders\tmp_bitmap.shader
+++TMP_SDF-Mobile Masking.shader
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\resources\shaders\tmp_sdf-mobile masking.shader
+++TMP_SDF-Mobile Overlay.shader
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\resources\shaders\tmp_sdf-mobile overlay.shader
+++TMP_SDF-Mobile.shader
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\resources\shaders\tmp_sdf-mobile.shader
+++TMP_SDF-Surface-Mobile.shader
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\resources\shaders\tmp_sdf-surface-mobile.shader
+++TMP_SDF-Surface.shader
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\resources\shaders\tmp_sdf-surface.shader
+++TMP_SDF Overlay.shader
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\resources\shaders\tmp_sdf overlay.shader
+++TMP_SDF.shader
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\resources\shaders\tmp_sdf.shader
+++TMP_Sprite.shader
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\resources\shaders\tmp_sprite.shader
+++TMPro.cginc
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\resources\shaders\tmpro.cginc
+++TMPro_Properties.cginc
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\resources\shaders\tmpro_properties.cginc
+++TMPro_Surface.cginc
+i:{c899f0f8-049d-6630-7695-8a08828b042d}:c:\users\usuario\desktop\simulador de tiro\simuladordetiro\assets\textmesh pro\resources\shaders\tmpro_surface.cginc

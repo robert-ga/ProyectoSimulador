@@ -1,0 +1,2 @@
+C:\Users\USUARIO\Desktop\Simulador De Tiro\SimuladorDeTiro\obj\Debug\Assembly-CSharp.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Desktop\Simulador De Tiro\SimuladorDeTiro\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
