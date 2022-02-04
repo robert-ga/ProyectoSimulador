@@ -46,7 +46,9 @@ public class CamController : MonoBehaviour
             print(f);
             if (int.Parse(distancia.text)==50)
             {
-                f = new Vector3(x, y, -29f);
+                //f = new Vector3(x, y, -29f);
+                f = new Vector3(x, y, -25f);
+                //f = new Vector3(x, y, z);
                 /*if (f.x < -11.4)
                 {
                     f.x = -11.4f;
@@ -66,48 +68,19 @@ public class CamController : MonoBehaviour
                 //print(f);
                 tar.position = Vector3.Lerp(tar.position, f, mover * Time.deltaTime);
             }
-            if (int.Parse(distancia.text) == 30)
+            if (int.Parse(distancia.text) == 25)
             {
-                f = new Vector3(x, y, -9f);
-                /*if (f.x < -11.4)
-                {
-                    f.x = -11.4f;
-                }
-                /*if (f.x > 10.9)
-                {
-                    f.x = 10.9f;
-                }*/
-                /*if (f.x > 12)
-                {
-                    f.x = 12f;
-                }
-                if (f.z < -11.3)
-                {
-                    f.z = -11.3f;
-                }*/
-                //print(f);
+                f = new Vector3(x, y, -2f);
                 tar.position = Vector3.Lerp(tar.position, f, mover * Time.deltaTime);
             }
-            if (int.Parse(distancia.text) == 10)
+            if (int.Parse(distancia.text) == 15)
             {
-                f = new Vector3(x, y, 11f);
-                /*if (f.x < -11.4)
-                {
-                    f.x = -11.4f;
-                }
-                /*if (f.x > 10.9)
-                {
-                    f.x = 10.9f;
-                }*/
-                /*if (f.x > 12)
-                {
-                    f.x = 12f;
-                }
-                if (f.z < -11.3)
-                {
-                    f.z = -11.3f;
-                }*/
-                //print(f);
+                f = new Vector3(x, y, 8f);
+                tar.position = Vector3.Lerp(tar.position, f, mover * Time.deltaTime);
+            }
+            if (int.Parse(distancia.text) == 5)
+            {
+                f = new Vector3(x, y, 18f);
                 tar.position = Vector3.Lerp(tar.position, f, mover * Time.deltaTime);
             }
 

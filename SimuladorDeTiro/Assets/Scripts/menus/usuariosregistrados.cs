@@ -12,6 +12,7 @@ public class usuariosregistrados : MonoBehaviour
     public Transform ce;
     public InputField nombre;
     public Button todo;
+
     //public GameObject panelre;
     //public Text texvi;
     void Start()
@@ -83,8 +84,6 @@ public class usuariosregistrados : MonoBehaviour
             print(datosusuarios);
         }
         return datosusuarios;
-
-        
     }
     public void llenardatos()
     {
@@ -153,13 +152,13 @@ public class usuariosregistrados : MonoBehaviour
             da.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
 
         }
+
     }
-    
+
+
     public void mostrartodo()
     {
-        
         llenardatos();
-        
     }
     void TaskOnClick()
     {

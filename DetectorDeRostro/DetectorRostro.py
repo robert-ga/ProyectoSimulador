@@ -14,12 +14,10 @@ P = False
 
 def map (longx, in_min, in_max, out_min, out_max):
     return (longx - in_min) * (out_max - out_min) / (in_max - in_min) + out_min
-
 class Tests():
     def Rostro(self):
         P = True
         return P
-
 with mp_face_mesh.FaceMesh(
         static_image_mode=False,
         max_num_faces=1,
@@ -63,7 +61,6 @@ with mp_face_mesh.FaceMesh(
                     # ax = round(map(X, 1.4, 8.8, -9.6, 2.68), 1)
                     # ay = round(map(y, 3.8, 8.1, 2.8, 6), 1)
                     # az = round(map(z, -0.20, -0.11, 10, 1), 1)
-
                     rx = str(ax)
                     ry = str(ay)
                     rz = str(az)
@@ -73,7 +70,6 @@ with mp_face_mesh.FaceMesh(
                 d.close()
             except:
                 pass
-
         end = time.time()
         totaltime = end - start
         fps = 1 / totaltime

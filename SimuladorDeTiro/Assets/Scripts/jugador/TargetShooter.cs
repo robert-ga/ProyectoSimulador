@@ -65,6 +65,7 @@ public class TargetShooter : MonoBehaviour
     {
         //kills();
         timer();
+        //persona();
         //precision();
         timerconta();
         compara();
@@ -200,10 +201,8 @@ public class TargetShooter : MonoBehaviour
         return canti.ToString();
         // 
     }
-    
-    public string compara()
+    public string persona()
     {
-        int x;
         if (Input.GetMouseButtonDown(0))
         {
             dis++;
@@ -217,38 +216,83 @@ public class TargetShooter : MonoBehaviour
 
                     case "cabeza":
                         target.Hit();
-                        print("cabeza");
                         canti++;
-                        
                         pre = pre + 10;
-                        
-                        
-                        break;
-                    case "cuerpo":
-                        target.Hit();
-                        canti++;
-                        pre = pre + 5;
-                        
-                        print("cuerpo");
                         break;
                     case "piernas":
                         target.Hit();
                         canti++;
-                        pre = pre + 2;
-                        
-                        print("pierna");
+                        pre = pre + 9;
                         break;
+                    case "cuerpo":
+                        target.Hit();
+                        canti++;
+                        pre = pre + 8;
+                        break;
+                    
                     default:
                         print("error");
                         break;
-                        
                 }
                 aciertos.text = canti.ToString();
                 preci.text = pre.ToString();
             }
         }
         return canti.ToString();
+    }
+    
+    public string compara()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            dis++;
+            municio(dis);
+            Ray ray = cam.ViewportPointToRay(new Vector3(0.5f, 0.5f));
+            if (Physics.Raycast(ray, out RaycastHit hit))
+            {
+                //Target target = GameObject.FindGameObjectWithTag("completo").GetComponent<Target>();
+                switch (hit.collider.gameObject.tag)
+                {
 
+                    case "10":
+                        //target.Hit();
+                        canti++; 
+                        pre = pre + 10;
+                        break;
+                    case "9":
+                        //target.Hit();
+                        canti++;
+                        pre = pre + 9;
+                        break;
+                    case "8":
+                        //target.Hit();
+                        canti++;
+                        pre = pre + 8;
+                        break;
+                    case "7":
+                        //target.Hit();
+                        canti++;
+                        pre = pre + 7;
+                        break;
+                    case "6":
+                        //target.Hit();
+                        canti++;
+                        pre = pre + 6;
+                        break;
+                    case "5":
+                        //target.Hit();
+                        canti++;
+                        pre = pre + 5;
+                        break;
+                    default:
+                        print("error");
+                        break;
+                }
+                aciertos.text = canti.ToString();
+                preci.text = pre.ToString();
+            }
+        }
+        return canti.ToString();
     }
 
     public string municio(int d)

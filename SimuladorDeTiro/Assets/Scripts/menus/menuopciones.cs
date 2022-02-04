@@ -78,17 +78,21 @@ public class menuopciones : MonoBehaviour
         }
         if (val == 1)
         {
-            dis = 10;
+            dis = 5;
         }
         if (val == 2)
         {
-            dis = 30;
+            dis = 15;
         }
         if (val == 3)
         {
+            dis = 25;
+        }
+        if (val == 4)
+        {
             dis = 50;
         }
- 
+
     }
     public void opcionmuni(int val)
     {

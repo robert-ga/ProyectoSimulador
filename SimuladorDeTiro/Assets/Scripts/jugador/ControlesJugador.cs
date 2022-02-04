@@ -20,7 +20,7 @@ public class ControlesJugador : MonoBehaviour
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-      // puntero();
+        //puntero();
 
     }
     void Update()
@@ -34,7 +34,7 @@ public class ControlesJugador : MonoBehaviour
     }
     private void puntero()
     {
-        /*string msg = File.ReadAllText(@"C:/Users/USUARIO/Desktop/Simulador De Tiro/DetectorDeArma/DatosPuntero.json");
+        string msg = File.ReadAllText(@"C:/Users/USUARIO/Desktop/Simulador De Tiro/DetectorDeArma/DatosPuntero.json");
         print(msg);
 
 
@@ -59,7 +59,7 @@ public class ControlesJugador : MonoBehaviour
         {
             //string msg = File.ReadAllText(@"C:/Users/User/Desktop/Simulador de Tiro/DetectorDeRostro/DatosSalida.json");
             File.Create(msg).Dispose();
-        }*/
+        }
         
     }
 }

@@ -9,8 +9,7 @@
 #
 # color_mouse_pointer = (255, 0, 255)
 #
-def map (longx, in_min, in_max, out_min, out_max):
-    return (longx - in_min) * (out_max - out_min) / (in_max - in_min) + out_min
+
 #
 #
 # def calculate_distance(x1, y1, x2, y2):
@@ -104,13 +103,14 @@ import time
 
 mp_drawing = mp.solutions.drawing_utils
 mp_hands = mp.solutions.hands
-
 cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
-
-
 rx = 0.0
 ry = 0.0
 xa=0
+
+def map (longx, in_min, in_max, out_min, out_max):
+    return (longx - in_min) * (out_max - out_min) / (in_max - in_min) + out_min
+
 with mp_hands.Hands(
     static_image_mode=False,
     max_num_hands=1,
@@ -120,13 +120,10 @@ with mp_hands.Hands(
         start = time.time()
         if ret == False:
             break
-
         height, width, _ = frame.shape
         frame = cv2.flip(frame, 1)
         frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-
         results = hands.process(frame_rgb)
-
         if results.multi_hand_landmarks is not None:
             for hand_landmarks in results.multi_hand_landmarks:
                 X = int(hand_landmarks.landmark[10].x * width)
@@ -136,24 +133,14 @@ with mp_hands.Hands(
                     a=a-10
                 if a > 310:
                     a=a+10
-
                 xx = round((a / 10), 1)
-
-
-
-
                 y = int(hand_landmarks.landmark[10].y * height)
                 b=y-30
                 yy = round((b / 10), 1)
-
-
                 cv2.circle(frame, (a, b), 3, (255, 0, 0), 3)
                 cv2.circle(frame, (a, b), 3, (255, 255, 255), -1)
-
                 ax = round(map(xx, 25, 40, -10, 10), 1)
                 ay = round(map(yy, 30, 25, 8, -8), 1)
-
-
                 rx = str(ax)
                 ry = str(ay)
             try:
@@ -162,7 +149,6 @@ with mp_hands.Hands(
                 d.close()
             except:
                 pass
-
         end = time.time()
         totaltime = end - start
         fps = 1 / totaltime
@@ -174,3 +160,57 @@ with mp_hands.Hands(
             break
 cap.release()
 cv2.destroyAllWindows()
+
+#
+# import cv2
+# import mediapipe as mp
+#
+# mp_drawing = mp.solutions.drawing_utils
+# mp_holistic = mp.solutions.holistic
+#
+# # cap = cv2.VideoCapture("video_0001.mp4")
+# cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+# color_mouse_pointer = (255, 0, 255)
+# with mp_holistic.Holistic(
+#         static_image_mode=False,
+#         model_complexity=1) as holistic:
+#     while True:
+#         ret, frame = cap.read()
+#         if ret == False:
+#             break
+#
+#         height, width, _ = frame.shape
+#         frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+#         results = holistic.process(frame_rgb)
+#
+#         # Mano izquieda (azul)
+#         # if results.left_face_landmarks is not None:
+#         #     for results.left_hand_landmarks in results.multi_face_landmarks:
+#         x = int(results.left_hand_landmarks.landmark[9].x * width)
+#
+#
+#         y = int(results.left_hand_landmarks.landmark[9].y * height)
+#
+#         cv2.circle(frame, (x, y), 10, color_mouse_pointer, 3)
+#         cv2.circle(frame, (x, y), 5, color_mouse_pointer, -1)
+#
+#
+#
+#         # mp_drawing.draw_landmarks(
+#         #     frame, results.left_hand_landmarks, mp_holistic.HAND_CONNECTIONS,
+#         #     mp_drawing.DrawingSpec(color=(255, 255, 0), thickness=2, circle_radius=1),
+#         #     mp_drawing.DrawingSpec(color=(255, 0, 0), thickness=2))
+#
+#         # Mano derecha (verde)
+#         mp_drawing.draw_landmarks(
+#             frame, results.right_hand_landmarks, mp_holistic.HAND_CONNECTIONS,
+#             mp_drawing.DrawingSpec(color=(0, 255, 0), thickness=2, circle_radius=1),
+#             mp_drawing.DrawingSpec(color=(57, 143, 0), thickness=2))
+#
+#         frame = cv2.flip(frame, 1)
+#         cv2.imshow("Frame", frame)
+#         if cv2.waitKey(1) & 0xFF == 27:
+#             break
+#
+# cap.release()
+# cv2.destroyAllWindows()
