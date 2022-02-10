@@ -18,7 +18,7 @@ public class CamController : MonoBehaviour
 
     void Start()
     {
-        //seguimientorostro();
+        seguimientorostro();
         distancia.text = recuperar.distancia;
     }
 
@@ -26,7 +26,7 @@ public class CamController : MonoBehaviour
     void LateUpdate()
     {
 
-        //seguimientorostro();
+        seguimientorostro();
     }
     public void seguimientorostro()
     {
@@ -43,11 +43,11 @@ public class CamController : MonoBehaviour
             float y = float.Parse(coordenadas[1]) / 10;
             float z = float.Parse(coordenadas[2]) / 10;
             Vector3 f = centerCam.transform.position;
-            print(f);
+            //print(f);
             if (int.Parse(distancia.text)==50)
             {
                 //f = new Vector3(x, y, -29f);
-                f = new Vector3(x, y, -25f);
+                f = new Vector3(x, y, 20f);
                 //f = new Vector3(x, y, z);
                 /*if (f.x < -11.4)
                 {
@@ -70,22 +70,19 @@ public class CamController : MonoBehaviour
             }
             if (int.Parse(distancia.text) == 25)
             {
-                f = new Vector3(x, y, -2f);
+                f = new Vector3(x, y, 50f);
                 tar.position = Vector3.Lerp(tar.position, f, mover * Time.deltaTime);
             }
             if (int.Parse(distancia.text) == 15)
             {
-                f = new Vector3(x, y, 8f);
+                f = new Vector3(x, y, 60f);
                 tar.position = Vector3.Lerp(tar.position, f, mover * Time.deltaTime);
             }
             if (int.Parse(distancia.text) == 5)
             {
-                f = new Vector3(x, y, 18f);
+                f = new Vector3(x, y, 67f);
                 tar.position = Vector3.Lerp(tar.position, f, mover * Time.deltaTime);
             }
-
-
-
         }
         else
         {

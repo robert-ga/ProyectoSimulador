@@ -25,12 +25,16 @@ public class ControlesJugador : MonoBehaviour
     }
     void Update()
     {
+        mouse();
+        //puntero();
+
+    }
+    public void mouse()
+    {
         transform.Rotate(Vector3.up * Input.GetAxisRaw("Mouse X") * mousesensi);
         verticalrotation -= Input.GetAxisRaw("Mouse Y") * mousesensi;
         verticalrotation = Mathf.Clamp(verticalrotation, -90f, 90f);
         camara.localEulerAngles = new Vector3(verticalrotation, 0, 0);
-        //puntero();
-
     }
     private void puntero()
     {

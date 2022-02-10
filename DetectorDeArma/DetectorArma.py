@@ -127,20 +127,21 @@ with mp_hands.Hands(
         if results.multi_hand_landmarks is not None:
             for hand_landmarks in results.multi_hand_landmarks:
                 X = int(hand_landmarks.landmark[10].x * width)
-                a=X
-                print(a)
-                if a < 310:
-                    a=a-10
-                if a > 310:
-                    a=a+10
-                xx = round((a / 10), 1)
                 y = int(hand_landmarks.landmark[10].y * height)
-                b=y-30
+                a = X
+                b = y - 30
+                xx = round((a / 10), 1)
                 yy = round((b / 10), 1)
+                # print(a)
+                # if a < 310:
+                #     a=a-10
+                # if a > 310:
+                #     a=a+10
+
                 cv2.circle(frame, (a, b), 3, (255, 0, 0), 3)
                 cv2.circle(frame, (a, b), 3, (255, 255, 255), -1)
-                ax = round(map(xx, 25, 40, -10, 10), 1)
-                ay = round(map(yy, 30, 25, 8, -8), 1)
+                ax = round(map(a, 90, 500, -20, 20), 1)
+                ay = round(map(b, 470, 70, 10, -10), 1)
                 rx = str(ax)
                 ry = str(ay)
             try:

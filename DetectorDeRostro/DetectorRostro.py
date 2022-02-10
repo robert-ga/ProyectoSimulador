@@ -42,8 +42,8 @@ with mp_face_mesh.FaceMesh(
                     y = normalizedLandmark.y * 10
                     z = normalizedLandmark.z * 10
                     # Rec Final
-                    ax = round(map(X, 2.2, 7.5, -13.36, 6), 1)
-                    ay = round(map(y, 8, 2, 2.8, 6), 1)
+                    ax = round(map(X, 2.2, 7.5, -30, 30), 1)
+                    ay = round(map(y, 8, 2, 22, 30), 1)
                     az = round(map(z, -0.8, -0.3, 13, -5.1), 1)
                     # otro
                     # ax = round(map(X, 2.2, 7.5, -16, 8), 1)

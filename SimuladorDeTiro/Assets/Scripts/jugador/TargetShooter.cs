@@ -30,7 +30,7 @@ public class TargetShooter : MonoBehaviour
     private GameObject cab;
     //private Collider collider;
     int m;
-
+    public AudioSource audiodisparo;
 
     void Start()
     {
@@ -245,6 +245,7 @@ public class TargetShooter : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            audiodisparo.Play();
             dis++;
             municio(dis);
             Ray ray = cam.ViewportPointToRay(new Vector3(0.5f, 0.5f));
