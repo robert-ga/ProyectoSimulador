@@ -14,3 +14,7 @@ while True:
     if e == "1":
         print("se disparo")
         pyautogui.click()
+
+
+
+

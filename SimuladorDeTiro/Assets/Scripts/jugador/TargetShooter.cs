@@ -251,37 +251,29 @@ public class TargetShooter : MonoBehaviour
             Ray ray = cam.ViewportPointToRay(new Vector3(0.5f, 0.5f));
             if (Physics.Raycast(ray, out RaycastHit hit))
             {
-                //Target target = GameObject.FindGameObjectWithTag("completo").GetComponent<Target>();
                 switch (hit.collider.gameObject.tag)
                 {
-
                     case "10":
-                        //target.Hit();
                         canti++; 
                         pre = pre + 10;
                         break;
                     case "9":
-                        //target.Hit();
                         canti++;
                         pre = pre + 9;
                         break;
                     case "8":
-                        //target.Hit();
                         canti++;
                         pre = pre + 8;
                         break;
                     case "7":
-                        //target.Hit();
                         canti++;
                         pre = pre + 7;
                         break;
                     case "6":
-                        //target.Hit();
                         canti++;
                         pre = pre + 6;
                         break;
                     case "5":
-                        //target.Hit();
                         canti++;
                         pre = pre + 5;
                         break;
