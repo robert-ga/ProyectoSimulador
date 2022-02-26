@@ -36,8 +36,7 @@ public class menuentrenador : MonoBehaviour
     {
         SceneManager.LoadScene("Estadisticas");
     }
-    public void opciones
-        ()
+    public void opciones()
     {
         SceneManager.LoadScene("Opciones");
     }

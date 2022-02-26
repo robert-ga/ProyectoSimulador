@@ -18,7 +18,7 @@ public class CamController : MonoBehaviour
 
     void Start()
     {
-        seguimientorostro();
+        //seguimientorostro();
         distancia.text = recuperar.distancia;
     }
 
@@ -26,7 +26,7 @@ public class CamController : MonoBehaviour
     void LateUpdate()
     {
 
-        seguimientorostro();
+        //seguimientorostro();
     }
     public void seguimientorostro()
     {
@@ -37,6 +37,7 @@ public class CamController : MonoBehaviour
 
         if (!File.Exists(msg))
         {
+            
 
             string[] coordenadas = msg.Split(';');
             float x = float.Parse(coordenadas[0]) / 10;

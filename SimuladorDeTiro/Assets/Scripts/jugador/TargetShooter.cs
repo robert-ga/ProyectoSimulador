@@ -31,6 +31,7 @@ public class TargetShooter : MonoBehaviour
     //private Collider collider;
     int m;
     public AudioSource audiodisparo;
+    public GameObject target;
 
     void Start()
     {
@@ -68,7 +69,8 @@ public class TargetShooter : MonoBehaviour
         //persona();
         //precision();
         timerconta();
-        compara();
+        //compara();
+        puntuacion();
         //regresar();
     }
 
@@ -283,6 +285,71 @@ public class TargetShooter : MonoBehaviour
                 }
                 aciertos.text = canti.ToString();
                 preci.text = pre.ToString();
+            }
+        }
+        return canti.ToString();
+    }
+    public string puntuacion()
+    {
+        float x, y;
+        RaycastHit hit;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        x = Input.mousePosition.x;
+        y = Input.mousePosition.y;
+
+        target.transform.position = new Vector3(x, y, 0f);
+        if (Input.GetMouseButtonDown(0))
+        {
+            audiodisparo.Play();
+            dis++;
+            municio(dis);
+            if (Physics.Raycast(ray, out hit, 100.0f))
+            {
+                print("entri");
+                if (hit.transform != null)
+                {
+                    // ptrin(hit.transform.gameObject);
+                    switch (hit.collider.gameObject.tag)
+                    {
+
+                        case "10":
+                            //target.Hit();
+                            canti++;
+                            pre = pre + 10;
+                            break;
+                        case "9":
+                            //target.Hit();
+                            canti++;
+                            pre = pre + 9;
+                            break;
+                        case "8":
+                            //target.Hit();
+                            canti++;
+                            pre = pre + 8;
+                            break;
+                        case "7":
+                            //target.Hit();
+                            canti++;
+                            pre = pre + 7;
+                            break;
+                        case "6":
+                            //target.Hit();
+                            canti++;
+                            pre = pre + 6;
+                            break;
+                        case "5":
+                            //target.Hit();
+                            canti++;
+                            pre = pre + 5;
+                            break;
+                        default:
+                            print("error");
+                            break;
+                    }
+
+                    aciertos.text = canti.ToString();
+                    preci.text = pre.ToString();
+                }
             }
         }
         return canti.ToString();

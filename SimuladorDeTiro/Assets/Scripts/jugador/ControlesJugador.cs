@@ -3,29 +3,32 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
+
 public class ControlesJugador : MonoBehaviour
 {
+    
     [SerializeField] Transform camara;
     [SerializeField] float mousesensi = 0.5f;
-    
+
     public float mover = 2f;
     private Quaternion a, b;
     public GameObject centerCam;
     public Transform tar;
+    public GameObject target;
     float verticalrotation;
    // public GameObject centerCam;
 
-
+    
     void Start()
     {
         Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Confined;
         //puntero();
 
     }
     void Update()
     {
-        mouse();
+        mouse2d();
         //puntero();
 
     }
@@ -55,5 +58,26 @@ public class ControlesJugador : MonoBehaviour
             File.Create(msg).Dispose();
         }
         
+    }
+    public void mouse2d()
+    {
+        float x, y;
+        RaycastHit hit;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        x = Input.mousePosition.x;
+        y = Input.mousePosition.y;
+
+        target.transform.position = new Vector3(x, y, 0f);
+        if (Physics.Raycast(ray, out hit, 100.0f))
+        {
+            if (hit.transform != null)
+            {
+                ptrin(hit.transform.gameObject);
+            }
+        }
+    }
+    public void ptrin(GameObject go)
+    {
+        print(go.name);
     }
 }

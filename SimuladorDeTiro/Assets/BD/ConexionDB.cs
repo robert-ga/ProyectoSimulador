@@ -16,7 +16,6 @@ public class ConexionDB : MonoBehaviour
     public Text posi, nega;
     public void Start()
     {
-       //readdb();
         panelre.SetActive(false);
         posi.enabled = false;
         nega.enabled = false;
@@ -26,7 +25,6 @@ public class ConexionDB : MonoBehaviour
         conexiondb();
         IDbCommand cmnd = dbcon.CreateCommand();
         cmnd.CommandText = "SELECT usuario,contrasena FROM usuarios";
-        //cmnd.ExecuteNonQuery();
         IDataReader reader = cmnd.ExecuteReader();
         while (reader.Read())
         {
@@ -38,15 +36,20 @@ public class ConexionDB : MonoBehaviour
                 nombre = usuarioregistro.text;
                 print("se encontro");
             }
-            
-            //for (int i = 0; i < usuario.Length; i++)
-             
-            //Debug.Log("usuario= " + usuario + "  contraseña =" + contrasena);
         }
         print(nombre);
         return nombre;
-        
-        //desconexiondb();
+    }
+    public void conexiondb()
+    {
+        string conn = "URI=file:" + Application.dataPath + "/BD/" + "simulador.db"; //Path to database.
+        dbcon = new SqliteConnection(conn);
+        dbcon.Open();
+        print("se conecto");
+    }
+    public void desconexiondb()
+    {
+        dbcon.Close();
     }
     public void Search_function(string nombre)
     {
@@ -71,14 +74,6 @@ public class ConexionDB : MonoBehaviour
     public void registrarusuario()
     {
         readdb();
-        /*conexiondb();
-         
-        IDbCommand cmnd = dbcon.CreateCommand();
-        cmnd.CommandText = "INSERT INTO usuarios (usuario,contrasena) VALUES(\'" + usuarioregistro.text + "\',\'" + contrasenaregistro.text + "\')";
-        cmnd.ExecuteNonQuery();
-        desconexiondb();*/
-
-
         if (readdb() != usuarioregistro.text)
         {
             conexiondb();
@@ -100,17 +95,7 @@ public class ConexionDB : MonoBehaviour
             print("ya registrado");
         }
     }
-    public void conexiondb()
-    {
-        string conn = "URI=file:" + Application.dataPath + "/BD/" + "simulador.db"; //Path to database.
-        dbcon = new SqliteConnection(conn);
-        dbcon.Open();
-        print("se conecto");
-    }
-    public void desconexiondb()
-    {
-        dbcon.Close();
-    }
+    
     public void regresar()
     {
         SceneManager.LoadScene("Registro");
