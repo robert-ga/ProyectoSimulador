@@ -11,6 +11,9 @@ public class menuentrenador : MonoBehaviour
     private void Start()
     {
         nombrere.text = recuperar.name;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+
         //Cursor.visible = true;
     }
 
@@ -19,6 +22,7 @@ public class menuentrenador : MonoBehaviour
     {
         
     }
+
     public void entrenar()
     {
         recuperar.tipo = 1;

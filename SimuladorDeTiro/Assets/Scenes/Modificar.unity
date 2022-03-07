@@ -933,8 +933,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 583741695}
   m_TextComponent: {fileID: 1510583639}
   m_Placeholder: {fileID: 221212053}
-  m_ContentType: 0
-  m_InputType: 0
+  m_ContentType: 7
+  m_InputType: 2
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
@@ -1271,7 +1271,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.38971493, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.65023804, y: 0}
+  m_AnchoredPosition: {x: 0.65026855, y: 0}
   m_SizeDelta: {x: -1.3809814, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &715708962

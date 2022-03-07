@@ -15,8 +15,12 @@ public class menulogin : MonoBehaviour
     public InputField usuario;
     public InputField contrasenaa;
     IDbConnection dbcon;
+    public GameObject panelre;
     private void Start()
     {
+        panelre.SetActive(false);
+        //string rutarostro = @"C:/Users/USUARIO\Desktop/Simulador De Tiro/DetectorDeRostro/DetectorRostro/DetectorRostro.exe";
+        //Application.OpenURL(rutarostro);
         //Cursor.visible = false;
     }
     //string nombre;
@@ -24,7 +28,9 @@ public class menulogin : MonoBehaviour
     {
         
         conparacion(usuario.text);
+
         
+
         //recuperanombre();
     }
     public void conparacion(string name)
@@ -42,19 +48,25 @@ public class menulogin : MonoBehaviour
 
                 recuperar.name = reader.GetString(1);
                 recuperar.idilogin = reader.GetInt32(0).ToString();
-                SceneManager.LoadScene("MenuEntrenador");
+                string rutagatillo = @"C:/Users/USUARIO/Desktop/Simulador De Tiro/DetectorDeGatillo/Disparo.exe";
+                //Application.OpenURL(rutagatillo);
+                //string rutarostro = @"C:/Users/USUARIO/Desktop/Simulador De Tiro/DetectorDeRostro/dist/DetectorRostro/DetectorRostro.exe";
+                //Application.OpenURL(rutarostro);
+                SceneManager.LoadScene("Calibrar");
     
                 //Search_function(usuario.text);
                 //print("jugador");
 
             }
-            if(usuario.text == "admi" && contrasenaa.text == "admi123")
+            else if(usuario.text == "admi" && contrasenaa.text == "admi123")
             {
                 SceneManager.LoadScene("MenuAdministrador");
                 //print("administrador");
             }
             else
             {
+                panelre.SetActive(true);
+
                 //print("no esta registrado");
             }
         }
@@ -70,6 +82,13 @@ public class menulogin : MonoBehaviour
     public void desconexiondb()
     {
         dbcon.Close();
+    }
+    public void verificar()
+    {
+
+        usuario.text = "";
+        contrasenaa.text = "";
+        panelre.SetActive(false);
     }
     /*public void Search_function(string nombree)
     {

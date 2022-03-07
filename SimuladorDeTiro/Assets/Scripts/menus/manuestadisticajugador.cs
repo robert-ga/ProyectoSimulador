@@ -7,6 +7,7 @@ using Mono.Data.Sqlite;
 using System.Data;
 using System;
 using System.IO;
+using TMPro;
 
 public class manuestadisticajugador : MonoBehaviour
 {
@@ -18,6 +19,9 @@ public class manuestadisticajugador : MonoBehaviour
 
     public Button entre;
     public Button exa;
+
+
+    string distan;
     // Start is called before the first frame update
     void Start()
     {
@@ -82,14 +86,14 @@ public class manuestadisticajugador : MonoBehaviour
         conexiondb();
         IDbCommand cmnd_read = dbcon.CreateCommand();
         IDataReader reader;
-        string query = "SELECT * FROM puntuacion where usuario LIKE\'" + Search_by_name + "\' ORDER BY id_puntuacion DESC";
+        string query = "SELECT * FROM puntuacion where usuario LIKE\'" + Search_by_name + "\' ORDER BY distancia,id_puntuacion desc";
         cmnd_read.CommandText = query;
         reader = cmnd_read.ExecuteReader();
         List<Datospuntuacion> datospuntuacion = new List<Datospuntuacion>();
         while (reader.Read())
         {
-            datospuntuacion.Add(new Datospuntuacion(reader[1].ToString(), int.Parse(reader[2].ToString()), int.Parse(reader[3].ToString()), reader[4].ToString(), reader[5].ToString(), reader[6].ToString(), reader[7].ToString(), reader[8].ToString(), reader[9].ToString()));
-            //print(reader[1].ToString());
+            datospuntuacion.Add(new Datospuntuacion(reader[1].ToString(), int.Parse(reader[2].ToString()), int.Parse(reader[3].ToString()), reader[4].ToString(), reader[5].ToString(), reader[6].ToString(), reader[7].ToString(), reader[8].ToString(), reader[9].ToString()
+                ));
         }
 
         return datospuntuacion;
@@ -101,11 +105,84 @@ public class manuestadisticajugador : MonoBehaviour
         {
             GameObject da = Instantiate(cell);
             Datospuntuacion datosentrenmiento = datospuntuacion[i];
-            da.GetComponent<llenarusuariopuntuacion>().setdatospuntuacion(datosentrenmiento.name, datosentrenmiento.kills, datosentrenmiento.municion, datosentrenmiento.precision, datosentrenmiento.tiempo, datosentrenmiento.demora, datosentrenmiento.fecha, datosentrenmiento.hora, datosentrenmiento.distancia);
+            da.GetComponent<llenarusuariopuntuacion>().setdatospuntuacion(datosentrenmiento.name, datosentrenmiento.kills, datosentrenmiento.municion, datosentrenmiento.precision, datosentrenmiento.tiempo+"Min", datosentrenmiento.demora + "Min", datosentrenmiento.fecha, datosentrenmiento.hora, datosentrenmiento.distancia + "M");
             da.transform.SetParent(ce);
             da.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
             //print(da);
 
+        }
+    }
+
+
+    public void distanciavalor(int val)
+    {
+        if(val == 0)
+        {
+
+        }
+        if (val == 1)
+        {
+            entre.gameObject.SetActive(true);
+            exa.gameObject.SetActive(false);
+            llenaresadisticarusuarios();
+        }
+        if (val == 2)
+        {
+            distan = "05";
+            entre.gameObject.SetActive(true);
+            exa.gameObject.SetActive(false);
+            llenaresadisticarusuariosdis();
+        }
+        if (val == 3)
+        {
+            distan = "10";
+            entre.gameObject.SetActive(true);
+            exa.gameObject.SetActive(false);
+            llenaresadisticarusuariosdis();
+        }
+        if (val == 4)
+        {
+            distan = "25";
+            entre.gameObject.SetActive(true);
+            exa.gameObject.SetActive(false);
+            llenaresadisticarusuariosdis();
+        }
+        if (val == 5)
+        {
+            distan = "50";
+            entre.gameObject.SetActive(true);
+            exa.gameObject.SetActive(false);
+            llenaresadisticarusuariosdis();
+        }
+    }
+    public List<Datospuntuacion> buscar5(string Search_by_name, string dis)
+    {
+        conexiondb();
+        IDbCommand cmnd_read = dbcon.CreateCommand();
+        IDataReader reader;
+        string query = "SELECT * FROM puntuacion where usuario LIKE\'" + Search_by_name+ "\' and distancia LIKE\'" + dis + "\' ORDER BY distancia,id_puntuacion desc";
+        cmnd_read.CommandText = query;
+        reader = cmnd_read.ExecuteReader();
+        List<Datospuntuacion> datospuntuacion = new List<Datospuntuacion>();
+        while (reader.Read())
+        {
+            datospuntuacion.Add(new Datospuntuacion(reader[1].ToString(), int.Parse(reader[2].ToString()), int.Parse(reader[3].ToString()), reader[4].ToString(), reader[5].ToString(), reader[6].ToString(), reader[7].ToString(), reader[8].ToString(), reader[9].ToString()
+                ));
+        }
+
+        return datospuntuacion;
+    }
+    public void llenaresadisticarusuariosdis()
+    {
+        List<Datospuntuacion> datospuntuacion = buscar5(nombrere.text, distan);
+        print(distan);
+        for (int i = 0; i < datospuntuacion.Count; i++)
+        {
+            GameObject da = Instantiate(cell);
+            Datospuntuacion datosentrenmiento = datospuntuacion[i];
+            da.GetComponent<llenarusuariopuntuacion>().setdatospuntuacion(datosentrenmiento.name, datosentrenmiento.kills, datosentrenmiento.municion, datosentrenmiento.precision, datosentrenmiento.tiempo + "Min", datosentrenmiento.demora + "Min", datosentrenmiento.fecha, datosentrenmiento.hora, datosentrenmiento.distancia + "M");
+            da.transform.SetParent(ce);
+            da.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
         }
     }
 
@@ -174,11 +251,15 @@ public class manuestadisticajugador : MonoBehaviour
              File.Delete(ruta);
         }
         TextWriter tw = new StreamWriter(ruta, false);
+        tw.WriteLine("Escuela Militar De Ingenieria U.A.Cochabamba");
+        tw.WriteLine("Departamento de Operaciones");
+        tw.WriteLine("Reporte de " + Search_by_name + " de entrenamientos");
+        tw.WriteLine("\n" + "\n");
         tw.WriteLine("Usuario;Aciertos;Municion;Puntuacion;Tiempo;Demora;Fecha;Hora;Distancia");
         tw.Close();
         IDbCommand cmnd_read = dbcon.CreateCommand();
         IDataReader reader;
-        string query = "SELECT * FROM puntuacion where usuario LIKE\'" + Search_by_name + "\' ORDER BY id_puntuacion DESC";
+        string query = "SELECT * FROM puntuacion where usuario LIKE\'" + Search_by_name + "\' ORDER BY distancia,id_puntuacion desc";
         cmnd_read.CommandText = query;
         reader = cmnd_read.ExecuteReader();
         List<Datospuntuacion> datospuntuacion = new List<Datospuntuacion>();
@@ -221,6 +302,10 @@ public class manuestadisticajugador : MonoBehaviour
             File.Delete(ruta);
         }
         TextWriter tw = new StreamWriter(ruta, false);
+        tw.WriteLine("Escuela Militar De Ingenieria U.A.Cochabamba");
+        tw.WriteLine("Departamento de Operaciones");
+        tw.WriteLine("Reporte de " + Search_by_name + " de examenes");
+        tw.WriteLine("\n" + "\n");
         tw.WriteLine("Usuario;Aciertos;Municion;Puntuacion;Tiempo;Demora;Fecha;Hora;Distancia");
         tw.Close();
         IDbCommand cmnd_read = dbcon.CreateCommand();

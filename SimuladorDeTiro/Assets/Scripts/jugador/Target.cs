@@ -14,7 +14,8 @@ public class Target : MonoBehaviour
     {
         distacia = Vector3.Distance(blanco.transform.position, puntero.transform.position);
         int x= (int)Math.Round(distacia);
-        //print(x);
+        print(x);
+        //dis.text = x.ToString();
     }
     public void Hit()
     {

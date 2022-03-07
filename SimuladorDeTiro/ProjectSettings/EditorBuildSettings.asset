@@ -38,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Examen.unity
     guid: 71fea3324ef70534a80ba9bb1308d338
+  - enabled: 1
+    path: Assets/Scenes/Calibrar.unity
+    guid: ec9827a5211da1449a0f4caa2e6f4eea
   m_configObjects: {}

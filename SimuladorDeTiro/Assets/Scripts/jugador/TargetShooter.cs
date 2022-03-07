@@ -294,8 +294,8 @@ public class TargetShooter : MonoBehaviour
         float x, y;
         RaycastHit hit;
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        x = Input.mousePosition.x;
-        y = Input.mousePosition.y;
+        x = Input.mousePosition.x ;
+        y = Input.mousePosition.y ;
 
         target.transform.position = new Vector3(x, y, 0f);
         if (Input.GetMouseButtonDown(0))
@@ -305,7 +305,7 @@ public class TargetShooter : MonoBehaviour
             municio(dis);
             if (Physics.Raycast(ray, out hit, 100.0f))
             {
-                print("entri");
+                //print("entri");
                 if (hit.transform != null)
                 {
                     // ptrin(hit.transform.gameObject);
